@@ -6,7 +6,7 @@ from aiohttp import web
 from route import web_server
 from Zaid.utils import load_plugins
 import logging
-from Zaid import Bot, Zaid, call_py
+from Zaid import Zaid, call_py
 from Zaid import client, ASSISTANT_ID
 from Zaid.plugins.autoleave import leave_from_inactive_call
 
