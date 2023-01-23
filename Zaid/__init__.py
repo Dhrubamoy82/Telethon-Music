@@ -33,7 +33,7 @@ class Bot():
         bind_address = "0.0.0.0"       
         await web.TCPSite(app, bind_address, 8080).start()     
         print(f"🕸️ Web Started ⚡️⚡️⚡️")
-
+        Zaid.run_until_disconnected()
 
     async def stop(*args):
         await Zaid.stop()
