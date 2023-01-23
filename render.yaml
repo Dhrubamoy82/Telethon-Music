@@ -3,8 +3,8 @@ services:
     plan: free
     name: music
     env: python
-    buildCommand: pip3 install -U -r requirements.txt
-    startCommand: python3 -m Zaid
+    buildCommand: pip install -U -r requirements.txt
+    startCommand: python -m Zaid
     repo: https://github.com/Dhrubamoy82/Telethon-Music      
     branch: render
     envVars:
