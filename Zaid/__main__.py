@@ -30,6 +30,11 @@ async def start_bot():
      botid = telethon.utils.get_peer_id(botme)
      print(f"[INFO]: ASSISTANT ID {botid}")
      await asyncio.create_task(leave_from_inactive_call())
+     app = web.AppRunner(await web_server())
+     await app.setup()
+     bind_address = "0.0.0.0"       
+     await web.TCPSite(app, bind_address, 8080).start()     
+     print(f"🕸️ Web Started ⚡️⚡️⚡️")
 
 
 loop = asyncio.get_event_loop()
