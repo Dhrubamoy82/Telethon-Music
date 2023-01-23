@@ -1,6 +1,7 @@
 import asyncio
 import telethon
 import glob
+from Config import Config
 from pathlib import Path
 from aiohttp import web
 from route import web_server
@@ -24,6 +25,8 @@ for name in files:
 
 
 async def start_bot():
+     await Zaid.start(bot_token=Config.BOT_TOKEN)
+     print("bot start")
      await client.start()
      await call_py.start()
      print("[INFO]: LOADING ASSISTANT DETAILS")
@@ -38,12 +41,13 @@ async def start_bot():
      print(f"🕸️ Web Started ⚡️⚡️⚡️")
 
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(start_bot())
+
 
 print("[INFO]: SUCCESSFULLY STARTED BOT!")
 print("[INFO]: VISIT @TheUpdatesChannel")
 
 
 if __name__ == "__main__":
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(start_bot())
     Zaid.run_until_disconnected()
