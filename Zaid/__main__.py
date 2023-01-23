@@ -24,7 +24,6 @@ for name in files:
 
 
 async def start_bot():
-     await Zaid.start(bot_token=Config.BOT_TOKEN)
      await client.start()
      await call_py.start()
      print("[INFO]: LOADING ASSISTANT DETAILS")
