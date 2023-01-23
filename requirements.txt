@@ -5,6 +5,7 @@ pillow
 aiofile
 yt-dlp
 aiofiles
+aiohttp
 youtube-search-python
 speedtest-cli
 numpy
