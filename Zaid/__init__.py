@@ -25,18 +25,11 @@ call_py = PyTgCalls(client)
 
 class Bot():
     async def start():
-        await Zaid.start(bot_token=Config.BOT_TOKEN)
-        await client.start()
-        await call_py.start()
         app = web.AppRunner(await web_server())
         await app.setup()
         bind_address = "0.0.0.0"       
         await web.TCPSite(app, bind_address, 8080).start()     
         print(f"🕸️ Web Started ⚡️⚡️⚡️")
-        Zaid.run_until_disconnected()
 
     async def stop(*args):
-        await Zaid.stop()
-        await client.stop()
-        await call_py.stop()
         print('Bot Stopped Bye')
