@@ -2,6 +2,8 @@ import asyncio
 import telethon
 import glob
 from pathlib import Path
+from aiohttp import web
+from route import web_server
 from Zaid.utils import load_plugins
 import logging
 from Zaid import Bot, Zaid, call_py
