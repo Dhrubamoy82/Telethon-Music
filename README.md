@@ -27,6 +27,11 @@ Note: This Code Based On Telethon So You need [Telethon String Session](https://
 
 <p align="center"><a href="https://my.scalingo.com/deploy?template=https://github.com/ITZ-ZAID/Telethon-Music"> <img src="https://cdn.scalingo.com/deploy/button.svg" width="220" height="38.45"/></a></p>
 
+
+## Deploy To Render 
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Dhrubamoy82/Telethon-Music)
+
 ## Workflows hosting
 
 <h4>Click the button below to import this code. How to host? Simply import this code then fill your vars in config.py then go to Actions and check build logs!</h4>
