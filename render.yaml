@@ -1,12 +1,12 @@
 services:
   - type: web
     plan: free
-    name: PYRO-RENAME-BOT
+    name: music
     env: python
-    buildCommand: .
+    buildCommand: /Dockerfile
     startCommand: python3 -m Zaid
     repo: https://github.com/Dhrubamoy82/Telethon-Music      
-    branch: main
+    branch: render
     envVars:
       - key: API_ID 
         sync: false    
