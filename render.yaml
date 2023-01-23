@@ -3,7 +3,7 @@ services:
     plan: free
     name: music
     env: python
-    buildCommand: /Dockerfile
+    buildCommand: pip3 install -U -r requirements.txt
     startCommand: python3 -m Zaid
     repo: https://github.com/Dhrubamoy82/Telethon-Music      
     branch: render
