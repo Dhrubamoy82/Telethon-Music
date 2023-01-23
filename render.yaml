@@ -8,6 +8,10 @@ services:
     repo: https://github.com/Dhrubamoy82/Telethon-Music      
     branch: render
     envVars:
-      - key: API_ID 
+      - key: ASSISTANT_ID 
+        sync: false
+      - key: BOT_TOKEN 
+        sync: false
+      - key: STRING_SESSION 
         sync: false    
     autoDeploy: false
